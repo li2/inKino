@@ -22,6 +22,11 @@ Future<void> main() async {
   final keyValueStore = FlutterKeyValueStore(prefs);
   final store = createStore(Client(), keyValueStore);
 
+  // NoSuchMethodError: The getter 'languageCode' was called on null.
+  while (ui.window.locale == null) {
+    await Future.delayed(const Duration(milliseconds: 1));
+  }
+
   FinnkinoApi.useFinnish = ui.window.locale.languageCode == 'fi';
   runApp(InKinoApp(store));
 }

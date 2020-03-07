@@ -10,7 +10,7 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
-  - Flutter (from `.symlinks/flutter/ios`)
+  - Flutter (from `Flutter`)
   - key_value_store_flutter (from `.symlinks/plugins/key_value_store_flutter/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
@@ -18,7 +18,7 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   Flutter:
-    :path: ".symlinks/flutter/ios"
+    :path: Flutter
   key_value_store_flutter:
     :path: ".symlinks/plugins/key_value_store_flutter/ios"
   path_provider:
@@ -29,12 +29,12 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/url_launcher/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
-  key_value_store_flutter: 5bf1aa677945ff2a2fc075b0e26f3bcaaecf049f
-  path_provider: 09407919825bfe3c2deae39453b7a5b44f467873
-  shared_preferences: 5a1d487c427ee18fcd3ea1f2a131569481834b53
-  url_launcher: 92b89c1029a0373879933c21642958c874539095
+  Flutter: bd837cb4c6faaf738bc642e6cc5340ea23e64d5d
+  key_value_store_flutter: 0987df666fd7ab201f01e7b025ead92540ab22e3
+  path_provider: 518ea58c88b6c9c666c5a935114af3bc47ce2dad
+  shared_preferences: 3d1e5698ad38efd3350d86a8d815382c7ccb7b63
+  url_launcher: acb655516ef8d38034a15bc84392a5e0fd77e091
 
-PODFILE CHECKSUM: 1e5af4103afd21ca5ead147d7b81d06f494f51a2
+PODFILE CHECKSUM: f32fb4e7c14f8b3ca19a369d7be425dd9241af27
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.1
