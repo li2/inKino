@@ -13,6 +13,11 @@ import 'package:redux/redux.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> main() async {
+  // If you're running an application and need to access the binary messenger before
+  // `runApp()` has been called (for example, during plugin initialization), then
+  // you need to explicitly call the `WidgetsFlutterBinding.ensureInitialized()` first.
+  WidgetsFlutterBinding.ensureInitialized();
+
   final prefs = await SharedPreferences.getInstance();
   final keyValueStore = FlutterKeyValueStore(prefs);
   final store = createStore(Client(), keyValueStore);
